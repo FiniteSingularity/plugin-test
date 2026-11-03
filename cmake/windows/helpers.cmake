@@ -104,8 +104,16 @@ function(target_install_resources target)
     install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/manifest.json" DESTINATION "${target}/data" COMPONENT Runtime)
 
     if(ENABLE_BUILD_LEGACY)
-      install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data/" DESTINATION "${target}_legacy/${target}/data" USE_SOURCE_PERMISSIONS)
-      install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/manifest.json" DESTINATION "${target}_legacy/${target}/data" COMPONENT Runtime)
+      install(
+        DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data/"
+        DESTINATION "${target}_legacy/${target}/data"
+        USE_SOURCE_PERMISSIONS
+      )
+      install(
+        FILES "${CMAKE_CURRENT_SOURCE_DIR}/manifest.json"
+        DESTINATION "${target}_legacy/${target}/data"
+        COMPONENT Runtime
+      )
 
       install(
         DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/data/"
