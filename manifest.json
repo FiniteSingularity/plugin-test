@@ -1,0 +1,16 @@
+{
+    "display_name": "Test Plugin",
+    "id": "6339e3a6-5642-4f24-add1-580ab2f22847",
+    "version": "1.0.0",
+    "authors": ["FiniteSingularity"],
+    "name": "finite-test-plugin",
+    "description": "A test plugin",
+    "long_description": "Long description for the test plugin.",
+    "urls": {
+        "repository": "<URL TO YOUR REPOSITORY>",
+        "website": "<URL TO YOUR WEBSITE>",
+        "support": "<URL TO YOUR SUPPORT PAGE>"
+    },
+    "has_banner": false,
+    "has_icon": false
+}
